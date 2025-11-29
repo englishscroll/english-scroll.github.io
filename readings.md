@@ -191,19 +191,23 @@
 <li class="">
     
 
-
-<div id="s-lg-content-47968153" class="">
+<div id="s-lg-content-47968153">
     <span>
-                    <a href=https://www.newyorker.com/magazine/2013/11/18/thanksgiving-in-mongolia" target="" onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: &#039;2&#039;,_st_content_id: &#039;47968153&#039;,_st_inc_return: this});" >
-                "Thanksgiving in Mongolia" by Ariel Levy
-            </a>
-        
+        <a href="https://www.newyorker.com/magazine/2013/11/18/thanksgiving-in-mongolia" target="_blank" 
+           onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '47968153',_st_inc_return: this});">
+            "Thanksgiving in Mongolia" by Ariel Levy
+        </a>
+    </span>
+</div>
 
-<div id="s-lg-content-47968153" class="">
+<div id="s-lg-content-47968154">
     <span>
-                    <a href=https://static.catapult.co/production/class_syllabus_files/422/original/Thanksgiving_in_Mongolia___The_New_Yorker_1656080531.pdf" target="" onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: &#039;2&#039;,_st_content_id: &#039;47968153&#039;,_st_inc_return: this});" >
-                "Thanksgiving in Mongolia (PDF)" by Ariel Levy
-            </a>
+        <a href="https://static.catapult.co/production/class_syllabus_files/422/original/Thanksgiving_in_Mongolia___The_New_Yorker_1656080531.pdf" target="_blank" 
+           onclick="return springSpace.springTrack.trackLink({link: this,_st_type_id: '2',_st_content_id: '47968153',_st_inc_return: this});">
+            "Thanksgiving in Mongolia (PDF)" by Ariel Levy
+        </a>
+    </span>
+</div>
 
 
 <script>
