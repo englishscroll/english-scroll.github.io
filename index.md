@@ -10,3 +10,4 @@ Use the links below to navigate the main topics:
 - [Academic Grammar](academic-grammar.md)
 - [Common Errors](common-errors.md)
 - [Practice Exercises](practice.md)
+- [Readings](readings.md)
