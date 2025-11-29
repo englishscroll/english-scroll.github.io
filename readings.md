@@ -1,19 +1,3 @@
-</div><div id="s-lg-box-wrapper-9931323" class="s-lg-box-wrapper-9931323">
-
-
-    <div id="s-lg-box-8416018-container" class="s-lib-box-container">
-        <div id="s-lg-box-8416018" class="s-lib-box s-lib-box-std">
-                            <h2 class="s-lib-box-title">
-                    Narration
-                                    </h2>
-                        <div id="s-lg-box-collapse-8416018" >
-                <div class="s-lib-box-content">
-                    
-
-    <div class="">
-        <ul id="s-lg-link-list-50807830"
-            class="s-lg-link-list s-lg-link-list-2">
-
 <li class="">
     
 
