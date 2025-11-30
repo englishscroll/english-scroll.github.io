@@ -1,3 +1,7 @@
+---
+layout: default
+title: Academic Grammar
+---
 # Academic Grammar
 
 ## Formal vs. Informal English
