@@ -22,9 +22,9 @@
             font-family: Georgia, serif;
         }
 
-        /* ====================================================== */
-        /*                      LIGHT THEME                       */
-        /* ====================================================== */
+        /* ========================= */
+        /* LIGHT THEME               */
+        /* ========================= */
         body.light {
             background: #f2e6c9;
             color: #3b2e1f;
@@ -54,9 +54,9 @@
             text-decoration: underline;
         }
 
-        /* ====================================================== */
-        /*                      DARK THEME                        */
-        /* ====================================================== */
+        /* ========================= */
+        /* DARK THEME                */
+        /* ========================= */
         body.dark {
             background: #1f1812;
             color: #e8d9c4;
@@ -65,7 +65,7 @@
         .dark .scroll-banner {
             background-color: #3a2e22;
             border-top: 5px solid #6a4b2a;
-            border-bottom: 5px solid #6a4b2a;
+            border-bottom: 5px solid #6a4b2f;
         }
 
         .dark .scroll-banner h1 {
@@ -86,9 +86,9 @@
             color: #ffce73;
         }
 
-        /* ====================================================== */
-        /*                    SHARED ELEMENTS                     */
-        /* ====================================================== */
+        /* ========================= */
+        /* SHARED ELEMENTS           */
+        /* ========================= */
         .scroll-banner {
             width: 100%;
             padding: 80px 20px;
@@ -125,6 +125,15 @@
             padding-left: 20px;
         }
 
+        /* Links styling for better visibility */
+        .content ul li a {
+            display: inline-block;
+            padding: 6px 10px;
+            margin-bottom: 6px;
+            border-radius: 4px;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
         /* Toggle Button */
         .toggle-btn {
             position: fixed;
@@ -145,10 +154,9 @@
             background-color: rgba(255,255,255,0.15);
         }
 
-        /* ====================================================== */
-        /*                 MOBILE RESPONSIVE RULES                */
-        /* ====================================================== */
-
+        /* ========================= */
+        /* MOBILE RESPONSIVE RULES   */
+        /* ========================= */
         @media (max-width: 768px) {
             .scroll-banner {
                 padding: 50px 10px;
@@ -194,11 +202,11 @@
                 padding: 12px;
             }
 
-            .content ul {
+            .content ul li a {
+                display: block;
                 font-size: 17px;
             }
         }
-
     </style>
 </head>
 
@@ -216,4 +224,52 @@
     <div class="content">
         <h2>A free wiki</h2>
 
-        <p>Welcome! This site provides clear explanations and helpful links to help you master English grammar at
+        <p>Welcome! This site provides clear explanations and helpful links to help you master English grammar at the college level.</p>
+
+        <p>Explore our main topics:</p>
+
+        <ul>
+            <li><a href="parts-of-speech.html">Parts of Speech</a></li>
+            <li><a href="sentence-structure.html">Sentence Structure</a></li>
+            <li><a href="punctuation.html">Punctuation</a></li>
+            <li><a href="academic-grammar.html">Academic Grammar</a></li>
+            <li><a href="common-errors.html">Common Errors</a></li>
+            <li><a href="practice.html">Practice Exercises</a></li>
+            <li><a href="readings.html">Readings</a></li>
+        </ul>
+    </div>
+
+    <!-- Theme Logic Script -->
+    <script>
+        const toggleBtn = document.getElementById('theme-toggle');
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)");
+        let savedTheme = localStorage.getItem('theme');
+
+        function applyTheme(theme) {
+            document.body.classList.remove('light', 'dark');
+            document.body.classList.add(theme);
+            toggleBtn.textContent = theme === 'dark' ? "☀️ Light Mode" : "🌙 Dark Mode";
+        }
+
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else {
+            applyTheme(prefersDark.matches ? 'dark' : 'light');
+        }
+
+        prefersDark.addEventListener("change", e => {
+            savedTheme = localStorage.getItem('theme');
+            if (!savedTheme) {
+                applyTheme(e.matches ? 'dark' : 'light');
+            }
+        });
+
+        toggleBtn.addEventListener('click', () => {
+            const newTheme = document.body.classList.contains('dark') ? 'light' : 'dark';
+            applyTheme(newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+
+</body>
+</html>
